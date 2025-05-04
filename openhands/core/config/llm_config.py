@@ -62,7 +62,7 @@ class LLMConfig(BaseModel):
     retry_max_wait: int = Field(default=30)
     timeout: int | None = Field(default=None)
     max_message_chars: int = Field(
-        default=30_000
+        default=60_000
     )  # maximum number of characters in an observation's content when sent to the llm
     temperature: float = Field(default=0.0)
     top_p: float = Field(default=1.0)
